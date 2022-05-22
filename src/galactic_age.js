@@ -3,25 +3,29 @@
 //}
 
 export default class Person {
-  constructor(name, age, averageLofeEx, ){
+  constructor(name){
     this.name = name;
-    this.age = age;
-    this.averageLofeEx = averageLofeEx;
+    this.age;
+    this.averageLifeExpectation;
   }
   
-  calculateMercury(){
+  calculateMercury(age){
+    this.age = age;
     return this.age/0.24;
   }
 
-  calculateVenus(){
+  calculateVenus(age){
+    this.age = age;
     return this.age/0.62;
   }
 
-  calculateMars(){
+  calculateMars(age){
+    this.age = age;
     return Math.round(this.age/1.88);
   }
 
-  calculateJupiter(){
+  calculateJupiter(age){
+    this.age = age;
     return Math.round(this.age/11.86);
   }
 }
@@ -104,5 +108,5 @@ Person.prototype.calculateAverage = function (life_S, activity_L){
 }
 
 Person.prototype.calculateMercuryAver = function(){
-  
+
 }
