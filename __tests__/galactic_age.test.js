@@ -45,19 +45,28 @@ describe('Persone', () => {
     expect(person.lifestyleList("no sport")).toBe(15);
   });
 
-  test('should correctly return points for not correct lifestyleList', () => {
+  test('should correctly return points for not correct value', () => {
     const person = new Person("Keren",24,75);
     expect(person.lifestyleList(" ")).toEqual(0);
   });
 //---------------------------------------------------------------------------------------//
-  test('should correctly return points for "every day"', () => {
+  test('should correctly return points for every day', () => {
     const person = new Person("Keren",24,75);
-    expect(person.lifestyleList("every day")).toBe(15);
+    expect(person.activityLevel("every day")).toBe(5);
   });
 
-  test('should correctly return points for "one per week"', () => {
+  test('should correctly return points for one per week', () => {
     const person = new Person("Keren",24,75);
-    expect(person.lifestyleList("no sport")).toBe(15);
+    expect(person.activityLevel("one per week")).toBe(10);
   });
 
+  test('should correctly return points for not often', () => {
+    const person = new Person("Keren",24,75);
+    expect(person.activityLevel("not often")).toBe(15);
+  });
+
+  test('should correctly return points for not correct value', () => {
+    const person = new Person("Keren",24,75);
+    expect(person.activityLevel(" ")).toBe(0);
+  });
 });

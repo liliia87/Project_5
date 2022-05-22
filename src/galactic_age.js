@@ -62,23 +62,27 @@ Person.prototype.activityLevel = function(activity_L){
   ]
 
   let lifeSactivityL;
-  switch (lifeSactivity_L){
+  switch (activity_L){
     case "every day": 
-      lifeS = 5;
+    lifeSactivityL = 5;
       console.log("You choose - professional sport");
       break;
     case "one per week":
-      lifeS = 10;
+      lifeSactivityL = 10;
       console.log("You choose - sport");
       break;
     case "not often":
-      lifeS = 15;
+      lifeSactivityL = 15;
       console.log("You choose - no sport");
       break;
     default:
-      console.log(`Sorry, we are out of ${lifeS}`);
+      console.log(`Sorry, we are out of ${lifeSactivityL}`);
       lifeSactivityL = 0;
       break;
   }
   return lifeSactivityL;
+}
+
+Person.prototype.calculateAverage = function ( ){
+
 }

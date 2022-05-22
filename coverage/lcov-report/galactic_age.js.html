@@ -22,30 +22,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">61.54% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>24/39</span>
+                <span class='fraction'>39/39</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">50% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>4/8</span>
+                <span class='fraction'>8/8</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">85.71% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>6/7</span>
+                <span class='fraction'>7/7</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">61.54% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>24/39</span>
+                <span class='fraction'>39/39</span>
             </div>
         
             
@@ -54,7 +54,7 @@
             Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
         </p>
     </div>
-    <div class='status-line medium'></div>
+    <div class='status-line high'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -145,9 +145,9 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">9x</span>
-<span class="cline-any cline-yes">9x</span>
-<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">13x</span>
+<span class="cline-any cline-yes">13x</span>
+<span class="cline-any cline-yes">13x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -196,32 +196,32 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">// export default function Triangle(side1, side2, side3) {
 //  ...
 //}
@@ -278,33 +278,33 @@ Person.prototype.lifestyleList = function(life_S){
   return lifeS;
 }
 &nbsp;
-Person.prototype.activityLevel = <span class="fstat-no" title="function not covered" >fu</span>nction(activity_L){
-  let activityLevel = <span class="cstat-no" title="statement not covered" >[</span>
+Person.prototype.activityLevel = function(activity_L){
+  let activityLevel = [
     "every day",
     "one per week",
     "not often"
   ]
 &nbsp;
   let lifeSactivityL;
-<span class="cstat-no" title="statement not covered" >  switch (lifeSactivity_L){</span>
+  switch (activity_L){
     case "every day": 
-<span class="cstat-no" title="statement not covered" >      lifeS = 5;</span>
-<span class="cstat-no" title="statement not covered" >      console.log("You choose - professional sport");</span>
-<span class="cstat-no" title="statement not covered" >      break;</span>
+    lifeSactivityL = 5;
+      console.log("You choose - professional sport");
+      break;
     case "one per week":
-<span class="cstat-no" title="statement not covered" >      lifeS = 10;</span>
-<span class="cstat-no" title="statement not covered" >      console.log("You choose - sport");</span>
-<span class="cstat-no" title="statement not covered" >      break;</span>
+      lifeSactivityL = 10;
+      console.log("You choose - sport");
+      break;
     case "not often":
-<span class="cstat-no" title="statement not covered" >      lifeS = 15;</span>
-<span class="cstat-no" title="statement not covered" >      console.log("You choose - no sport");</span>
-<span class="cstat-no" title="statement not covered" >      break;</span>
+      lifeSactivityL = 15;
+      console.log("You choose - no sport");
+      break;
     default:
-<span class="cstat-no" title="statement not covered" >      console.log(`Sorry, we are out of ${lifeS}`);</span>
-<span class="cstat-no" title="statement not covered" >      lifeSactivityL = 0;</span>
-<span class="cstat-no" title="statement not covered" >      break;</span>
+      console.log(`Sorry, we are out of ${lifeSactivityL}`);
+      lifeSactivityL = 0;
+      break;
   }
-<span class="cstat-no" title="statement not covered" >  return lifeSactivityL;</span>
+  return lifeSactivityL;
 }</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
@@ -312,7 +312,7 @@ Person.prototype.activityLevel = <span class="fstat-no" title="function not cove
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
-                at Sat May 21 2022 22:19:34 GMT-0700 (Pacific Daylight Time)
+                at Sat May 21 2022 22:28:58 GMT-0700 (Pacific Daylight Time)
             </div>
         </div>
         <script src="prettify.js"></script>
