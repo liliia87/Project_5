@@ -31,11 +31,7 @@ export default class Person {
 }
 
 Person.prototype.lifestyleList = function(life_S){
-  let lifestyleList = [
-    "professional sport",
-    "sport",
-    "no sport",
-  ];
+
   let lifeS;
   switch (life_S){
     case "professional sport": 
@@ -59,11 +55,6 @@ Person.prototype.lifestyleList = function(life_S){
 }
 
 Person.prototype.activityLevel = function(activity_L){
-  let activityLevel = [
-    "every day",
-    "one per week",
-    "not often"
-  ]
 
   let lifeSactivityL;
   switch (activity_L){
