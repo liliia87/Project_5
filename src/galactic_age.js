@@ -26,20 +26,55 @@ export default class Person {
   }
 }
 
-Person.prototype.getlifeStyle = function(){
+Person.prototype.lifestyleList = function(life_S){
   let lifestyleList = [
     "professional sport",
     "sport",
     "no sport",
   ];
+  let lifeS;
+  switch (life_S){
+    case "professional sport": 
+      lifeS = 5;
+      console.log("You choose - professional sport");
+      break;
+    case "sport":
+      lifeS = 10;
+      console.log("You choose - sport");
+      break;
+    case "no sport":
+      lifeS = 15;
+      console.log("You choose - no sport");
+      break;
+    default:
+      console.log(`Sorry, we are out of ${lifeS}`);
+  }
+  return lifeS;
+}
 
+Person.prototype.activityLevel = function(activity_L){
   let activityLevel = [
     "every day",
     "one per week",
     "not often"
   ]
-  switch (lifestyleList[0] && activityLevel[0]){
-    
-  }
 
+  let lifeSactivityL;
+  switch (lifeSactivity_L){
+    case "every day": 
+      lifeS = 5;
+      console.log("You choose - professional sport");
+      break;
+    case "one per week":
+      lifeS = 10;
+      console.log("You choose - sport");
+      break;
+    case "not often":
+      lifeS = 15;
+      console.log("You choose - no sport");
+      break;
+    default:
+      console.log(`Sorry, we are out of ${lifeS}`);
+  }
+  return lifeSactivityL;
 }

@@ -30,14 +30,34 @@ describe('Persone', () => {
     expect(person.calculateJupiter()).toBe(2);
   });
 
-  test('the shopping list has sport on it', () => {
-    let lifestyleList = new Set([
-      "professional sport",
-      "sport",
-      "no sport",
-    ]);
-    expect(lifestyleList).toContain('sport');
-    expect(lifestyleList).toContain('professional sport');
-    expect(lifestyleList).toContain('no sport');
+  // test('the shopping list has sport on it', () => {
+  //   let lifestyleList = new Set([
+  //     "professional sport",
+  //     "sport",
+  //     "no sport",
+  //   ]);
+  //   expect(lifestyleList).toContain('sport');
+  //   expect(lifestyleList).toContain('professional sport');
+  //   expect(lifestyleList).toContain('no sport');
+  // });
+
+  test('should correctly return points for professional sport', () => {
+    const person = new Person("Keren",24,75);
+    expect(person.lifestyleList("professional sport")).toBe(5);
+  });
+
+  test('should correctly return points for professional sport', () => {
+    const person = new Person("Keren",24,75);
+    expect(person.lifestyleList("sport")).toBe(10);
+  });
+
+  test('should correctly return points for professional sport', () => {
+    const person = new Person("Keren",24,75);
+    expect(person.lifestyleList("no sport")).toBe(15);
+  });
+
+  test('should correctly return points for professional sport', () => {
+    const person = new Person("Keren",24,75);
+    expect(person.lifestyleList("no sport")).toBe(15);
   });
 });
