@@ -25,7 +25,7 @@ describe('Persone', () => {
     expect(person.calculateMars()).toBe(13);
   });
 
-  test('should correctly calculate year on Mars', () => {
+  test('should correctly calculate year on Jupiter', () => {
     const person = new Person("Keren",24,75);
     expect(person.calculateJupiter()).toBe(2);
   });
@@ -77,6 +77,6 @@ describe('Persone', () => {
 
   test('should correctly return points for calculating average life', () => {
     const person = new Person("Keren",24,75);
-    expect(person.calculateAverage("sport","not often")).toBe(75);
+    expect(person.calculateAverage("professional sport","not often")).toBe(50);
   });
 });

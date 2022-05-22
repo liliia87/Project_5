@@ -88,7 +88,7 @@ Person.prototype.calculateAverage = function (life_S, activity_L){
   let activityL = this.activityLevel(activity_L);
   let result = lifeStyle + activityL;
   let aver;
-  if (result == 10){
+  if (result == 10 || result == 20){
    aver = 50;
   }
   else if (result == 15){
