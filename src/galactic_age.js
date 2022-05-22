@@ -129,5 +129,20 @@ Person.prototype.calculateVenusAver = function(age){
     difference = aver_Age - Venus_age;
     return `You will live on Venus on ${Math.round(difference)} year less`;
   }
-  
+}
+  Person.prototype.calculateMarsAver = function(age){
+    let Mars_age = this.calculateMars(age);
+    let life_S = "professional sport";
+    let activity_L = "one per week";
+    let aver_Age = this.calculateAverage(life_S, activity_L);
+    let difference;
+    if (Mars_age > aver_Age){
+      difference = Mars_age - aver_Age;
+      return `You will live on Venus on ${Math.round(difference)} year more`;
+    }
+    else if (aver_Age > Mars_age){
+      difference = aver_Age - Mars_age;
+      return `You will live on Venus on ${Math.round(difference)} year less`;
+    }
+
 }
