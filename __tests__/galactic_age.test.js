@@ -97,6 +97,6 @@ describe('Persone', () => {
 
   test('return the number of years they have lived past the life expectancy', () => {
     const person = new Person("Keren");
-    expect(person.calculateMercuryAver(100, 80)).toBe('You will live on Mercury on 20 year more');
+    expect(person.calculateMercuryAver(24)).toBe('You will live on Mercury on 20 year more');
   });
 });
