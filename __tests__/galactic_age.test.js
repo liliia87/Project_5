@@ -11,23 +11,23 @@ describe('Persone', () => {
 
   test('should correctly calculate year on Mercury', () => {
     const person = new Person("Keren");
-    expect(person.calculateMercury()).toEqual(100);
+    expect(person.calculateMercury(24)).toEqual(100);
     
   });
 
   test('should correctly calculate year on Venus', () => {
     const person = new Person("Keren");
-    expect(person.calculateVenus()).toBeCloseTo(38.709);
+    expect(person.calculateVenus(24)).toBeCloseTo(38.709);
   });
 
   test('should correctly calculate year on Mars', () => {
     const person = new Person("Keren");
-    expect(person.calculateMars()).toBe(13);
+    expect(person.calculateMars(24)).toBe(13);
   });
 
   test('should correctly calculate year on Jupiter', () => {
     const person = new Person("Keren");
-    expect(person.calculateJupiter()).toBe(2);
+    expect(person.calculateJupiter(24)).toBe(2);
   });
 
   test('should correctly return points for professional sport', () => {
@@ -76,21 +76,27 @@ describe('Persone', () => {
   });
 
   test('should correctly return points for calculating average life professional sport ~ not often', () => {
-    const person = new Person("Keren",24,75);
+    const person = new Person("Keren");
     expect(person.calculateAverage("professional sport","not often")).toBe(50);
   });
 
   test('should correctly return points for calculating average life no sport ~ every day', () => {
-    const person = new Person("Keren",24,75);
+    const person = new Person("Keren");
     expect(person.calculateAverage("no sport","every day")).toBe(50);
   });
 
   test('should correctly return points for calculating average life no sport ~ not often', () => {
-    const person = new Person("Keren",24,75);
+    const person = new Person("Keren");
     expect(person.calculateAverage("no sport","not often")).toBe(60);
   });
+
   test('should correctly return points for calculating average life sport ~ every day', () => {
-    const person = new Person("Keren",24,75);
+    const person = new Person("Keren");
+    expect(person.calculateAverage("sport","every day")).toBe(80);
+  });
+
+  test('should correctly return points for calculating average life sport ~ every day', () => {
+    const person = new Person("Keren");
     expect(person.calculateAverage("sport","every day")).toBe(80);
   });
 });

@@ -107,6 +107,17 @@ Person.prototype.calculateAverage = function (life_S, activity_L){
   return aver;
 }
 
-Person.prototype.calculateMercuryAver = function(){
-
+Person.prototype.calculateMercuryAver = function(age, averAge){
+  let Mercury_age = this.calculateMercury(age);
+  let aver_Age = this.calculateAverage(life_S, activity_L);
+  let difference;
+  if (Mercury_age > aver_Age){
+    difference = Mercury_age -aver_Age;
+    return consol.log(`You will live on Mercury on ${difference} year more`);
+  }
+  else {
+    difference = aver_Age - Mercury_age;
+    return consol.log(`You will live on Mercury on ${difference} year less`);
+  }
+  
 }
