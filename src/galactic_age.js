@@ -146,3 +146,16 @@ Person.prototype.calculateVenusAver = function(age){
     }
 
 }
+
+Person.prototype.calculateJupiterAver = function(age){
+  let Jupiter_age = this.calculateJupiter(age);
+  let life_S = "professional sport";
+  let activity_L = "every day";
+  let aver_Age = this.calculateAverage(life_S, activity_L);
+  let difference;
+  if (aver_Age > Jupiter_age){
+    difference = aver_Age - Jupiter_age;
+    return `You will live on Jupiter on ${Math.round(difference)} year less`;
+  }
+
+}

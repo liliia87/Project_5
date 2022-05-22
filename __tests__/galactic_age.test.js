@@ -95,33 +95,39 @@ describe('Persone', () => {
     expect(person.calculateAverage("sport","every day")).toBe(80);
   });
 
-  test('return the number of years they have lived past the life expectancy', () => {
+  test('return the number of years they have lived past the life expectancy Mercury', () => {
     const person = new Person("Keren");
     expect(person.calculateMercuryAver(24)).toBe('You will live on Mercury on 20 year more');
   });
 
-  test('return the number of years they have lived past the life expectancy', () => {
+  test('return the number of years they have lived past the life expectancy Mercury', () => {
     const person = new Person("Keren");
     expect(person.calculateMercuryAver(1)).toBe('You will live on Mercury on 76 year less');
   });
 
-  test('return the number of years they have lived past the life expectancy', () => {
+  test('return the number of years they have lived past the life expectancy Venus', () => {
     const person = new Person("Keren");
     expect(person.calculateVenusAver(24)).toBe('You will live on Venus on 41 year less');
   });
 
-  test('return the number of years they have lived past the life expectancy', () => {
+  test('return the number of years they have lived past the life expectancy Venus', () => {
     const person = new Person("Keren");
     expect(person.calculateVenusAver(100)).toBe('You will live on Venus on 81 year more');
   });
 
-  test('return the number of years they have lived past the life expectancy', () => {
+  test('return the number of years they have lived past the life expectancy Mars', () => {
     const person = new Person("Keren");
     expect(person.calculateMarsAver(24)).toBe('You will live on Mars on 67 year less');
   });
 
-  test('return the number of years they have lived past the life expectancy', () => {
+  test('return the number of years they have lived past the life expectancy Mars', () => {
     const person = new Person("Keren");
     expect(person.calculateMarsAver(200)).toBe('You will live on Mars on 26 year more');
   });
+
+  test('return the number of years they have lived past the life expectancy Jupiter', () => {
+    const person = new Person("Keren");
+    expect(person.calculateJupiterAver(59)).toBe('You will live on Jupiter on 45 year less');
+  });
+  
 });
