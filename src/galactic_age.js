@@ -115,11 +115,11 @@ Person.prototype.calculateMercuryAver = function(age, averAge){
   let difference;
   if (Mercury_age > aver_Age){
     difference = Mercury_age - aver_Age;
-    return `You will live on Mercury on ${difference} year more`;
+    return `You will live on Mercury on ${Math.round(difference)} year more`;
   }
-  else {
+  else  if (aver_Age > Mercury_age){
     difference = aver_Age - Mercury_age;
-    return `You will live on Mercury on ${difference} year less`;
+    return `You will live on Mercury on ${Math.round(difference)} year less`;
   }
   
 }
