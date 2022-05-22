@@ -102,3 +102,7 @@ Person.prototype.calculateAverage = function (life_S, activity_L){
   }
   return aver;
 }
+
+Person.prototype.calculateMercuryAver = function(){
+  
+}
