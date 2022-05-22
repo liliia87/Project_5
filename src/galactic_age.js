@@ -26,8 +26,20 @@ export default class Person {
   }
 }
 
-let lifestyleList = [
-  "professional sport",
-  "sport",
-  "no sport",
-];
+Person.prototype.getlifeStyle = function(){
+  let lifestyleList = [
+    "professional sport",
+    "sport",
+    "no sport",
+  ];
+
+  let activityLevel = [
+    "every day",
+    "one per week",
+    "not often"
+  ]
+  switch (lifestyleList[0] && activityLevel[0]){
+    
+  }
+
+}
