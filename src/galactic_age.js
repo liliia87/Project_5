@@ -48,6 +48,8 @@ Person.prototype.lifestyleList = function(life_S){
       break;
     default:
       console.log(`Sorry, we are out of ${lifeS}`);
+      lifeS = 0;
+      break;
   }
   return lifeS;
 }
@@ -75,6 +77,8 @@ Person.prototype.activityLevel = function(activity_L){
       break;
     default:
       console.log(`Sorry, we are out of ${lifeS}`);
+      lifeSactivityL = 0;
+      break;
   }
   return lifeSactivityL;
 }
