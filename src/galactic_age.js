@@ -123,3 +123,20 @@ Person.prototype.calculateMercuryAver = function(age){
   }
   
 }
+
+Person.prototype.calculateVenusAver = function(age){
+  let Mercury_age = this.calculateVenus(age);
+  let life_S = "professional sport";
+  let activity_L = "one per week";
+  let aver_Age = this.calculateAverage(life_S, activity_L);
+  let difference;
+  if (Mercury_age > aver_Age){
+    difference = Mercury_age - aver_Age;
+    return `You will live on Mercury on ${Math.round(difference)} year more`;
+  }
+  else  if (aver_Age > Mercury_age){
+    difference = aver_Age - Mercury_age;
+    return `You will live on Mercury on ${Math.round(difference)} year less`;
+  }
+  
+}
