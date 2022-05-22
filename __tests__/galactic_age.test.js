@@ -70,26 +70,26 @@ describe('Persone', () => {
     expect(person.activityLevel(" ")).toBe(0);
   });
 
-  test('should correctly return points for calculating average life', () => {
+  test('should correctly return points for calculating average life sport ~ not often', () => {
     const person = new Person("Keren",24,75);
     expect(person.calculateAverage("sport","not often")).toBe(75);
   });
 
-  test('should correctly return points for calculating average life', () => {
+  test('should correctly return points for calculating average life professional sport ~ not often', () => {
     const person = new Person("Keren",24,75);
     expect(person.calculateAverage("professional sport","not often")).toBe(50);
   });
 
-  test('should correctly return points for calculating average life', () => {
+  test('should correctly return points for calculating average life no sport ~ every day', () => {
     const person = new Person("Keren",24,75);
     expect(person.calculateAverage("no sport","every day")).toBe(50);
   });
 
-  test('should correctly return points for calculating average life', () => {
+  test('should correctly return points for calculating average life no sport ~ not often', () => {
     const person = new Person("Keren",24,75);
     expect(person.calculateAverage("no sport","not often")).toBe(60);
   });
-  test('should correctly return points for calculating average life', () => {
+  test('should correctly return points for calculating average life sport ~ every day', () => {
     const person = new Person("Keren",24,75);
     expect(person.calculateAverage("sport","every day")).toBe(80);
   });
