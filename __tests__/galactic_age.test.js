@@ -69,4 +69,14 @@ describe('Persone', () => {
     const person = new Person("Keren",24,75);
     expect(person.activityLevel(" ")).toBe(0);
   });
+
+  test('should correctly return points for calculating average life', () => {
+    const person = new Person("Keren",24,75);
+    expect(person.calculateAverage("sport","not often")).toBe(75);
+  });
+
+  test('should correctly return points for calculating average life', () => {
+    const person = new Person("Keren",24,75);
+    expect(person.calculateAverage("sport","not often")).toBe(75);
+  });
 });

@@ -83,6 +83,22 @@ Person.prototype.activityLevel = function(activity_L){
   return lifeSactivityL;
 }
 
-Person.prototype.calculateAverage = function ( ){
-
+Person.prototype.calculateAverage = function (life_S, activity_L){
+  let lifeStyle = this.lifestyleList(life_S);
+  let activityL = this.activityLevel(activity_L);
+  let result = lifeStyle + activityL;
+  let aver;
+  if (result == 10){
+   aver = 50;
+  }
+  else if (result == 15){
+   aver = 80;
+  }
+  else if (result == 25){
+    aver = 75;
+  }
+  else if (result == 30){
+    aver = 60;
+  }
+  return aver;
 }
