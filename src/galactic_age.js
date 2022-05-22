@@ -138,11 +138,11 @@ Person.prototype.calculateVenusAver = function(age){
     let difference;
     if (Mars_age > aver_Age){
       difference = Mars_age - aver_Age;
-      return `You will live on Venus on ${Math.round(difference)} year more`;
+      return `You will live on Mars on ${Math.round(difference)} year more`;
     }
     else if (aver_Age > Mars_age){
       difference = aver_Age - Mars_age;
-      return `You will live on Venus on ${Math.round(difference)} year less`;
+      return `You will live on Mars on ${Math.round(difference)} year less`;
     }
 
 }
