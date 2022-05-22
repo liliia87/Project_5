@@ -79,4 +79,18 @@ describe('Persone', () => {
     const person = new Person("Keren",24,75);
     expect(person.calculateAverage("professional sport","not often")).toBe(50);
   });
+
+  test('should correctly return points for calculating average life', () => {
+    const person = new Person("Keren",24,75);
+    expect(person.calculateAverage("no sport","every day")).toBe(50);
+  });
+
+  test('should correctly return points for calculating average life', () => {
+    const person = new Person("Keren",24,75);
+    expect(person.calculateAverage("no sport","not often")).toBe(60);
+  });
+  test('should correctly return points for calculating average life', () => {
+    const person = new Person("Keren",24,75);
+    expect(person.calculateAverage("sport","every day")).toBe(80);
+  });
 });
