@@ -104,4 +104,14 @@ describe('Persone', () => {
     const person = new Person("Keren");
     expect(person.calculateMercuryAver(1)).toBe('You will live on Mercury on 76 year less');
   });
+
+  test('return the number of years they have lived past the life expectancy', () => {
+    const person = new Person("Keren");
+    expect(person.calculateVenusAver(24)).toBe('You will live on Venus on 41 year less');
+  });
+
+  test('return the number of years they have lived past the life expectancy', () => {
+    const person = new Person("Keren");
+    expect(person.calculateVenusAver(100)).toBe('You will live on Venus on 81 year more');
+  });
 });
