@@ -95,8 +95,8 @@ describe('Persone', () => {
     expect(person.calculateAverage("sport","every day")).toBe(80);
   });
 
-  test('should correctly return points for calculating average life sport ~ every day', () => {
+  test('return the number of years they have lived past the life expectancy', () => {
     const person = new Person("Keren");
-    expect(person.calculateAverage("sport","every day")).toBe(80);
+    expect(person.calculateMercuryAver(24, 80)).toBe('You will live on Mercury on ${difference} year more');
   });
 });
