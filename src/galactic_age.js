@@ -47,7 +47,7 @@ Person.prototype.lifestyleList = function(life_S){
       console.log("You choose - no sport");
       break;
     default:
-      console.log(`Sorry, we are out of ${lifeS}`);
+      //console.log(`Sorry, we are out of ${lifeS}`);
       lifeS = 0;
       break;
   }
@@ -71,7 +71,7 @@ Person.prototype.activityLevel = function(activity_L){
       console.log("You choose - no sport");
       break;
     default:
-      console.log(`Sorry, we are out of ${lifeSactivityL}`);
+      //console.log(`Sorry, we are out of ${lifeSactivityL}`);
       lifeSactivityL = 0;
       break;
   }
@@ -92,23 +92,22 @@ Person.prototype.calculateAverage = function (life_S, activity_L){
   else if (result == 25){
     aver = 75;
   }
-  else if (result == 30){
+  else
     aver = 60;
-  }
   return aver;
 }
 
-Person.prototype.calculateMercuryAver = function(age){
+Person.prototype.calculateMercuryAver = function(age, lifeS, activityL){
   let Mercury_age = this.calculateMercury(age);
-  let life_S = "professional sport";
-  let activity_L = "one per week";
+  let life_S = lifeS;
+  let activity_L = activityL;
   let aver_Age = this.calculateAverage(life_S, activity_L);
   let difference;
   if (Mercury_age > aver_Age){
     difference = Mercury_age - aver_Age;
     return `You will live on Mercury on ${Math.round(difference)} year more`;
   }
-  else  if (aver_Age > Mercury_age){
+  else {
     difference = aver_Age - Mercury_age;
     return `You will live on Mercury on ${Math.round(difference)} year less`;
   }
@@ -117,19 +116,20 @@ Person.prototype.calculateMercuryAver = function(age){
 
 Person.prototype.calculateVenusAver = function(age){
   let Venus_age = this.calculateVenus(age);
-  let life_S = "professional sport";
-  let activity_L = "one per week";
+  let life_S = "no sport";
+  let activity_L = "not often";
   let aver_Age = this.calculateAverage(life_S, activity_L);
   let difference;
   if (Venus_age > aver_Age){
     difference = Venus_age - aver_Age;
     return `You will live on Venus on ${Math.round(difference)} year more`;
   }
-  else if (aver_Age > Venus_age){
+  else {
     difference = aver_Age - Venus_age;
     return `You will live on Venus on ${Math.round(difference)} year less`;
   }
 }
+
   Person.prototype.calculateMarsAver = function(age){
     let Mars_age = this.calculateMars(age);
     let life_S = "professional sport";
@@ -140,22 +140,20 @@ Person.prototype.calculateVenusAver = function(age){
       difference = Mars_age - aver_Age;
       return `You will live on Mars on ${Math.round(difference)} year more`;
     }
-    else if (aver_Age > Mars_age){
+    else {
       difference = aver_Age - Mars_age;
       return `You will live on Mars on ${Math.round(difference)} year less`;
     }
 
 }
 
-Person.prototype.calculateJupiterAver = function(age){
+Person.prototype.calculateJupiterAver = function(age, lifeS, activityL){
   let Jupiter_age = this.calculateJupiter(age);
-  let life_S = "professional sport";
-  let activity_L = "one per week";
+  let life_S = lifeS;
+  let activity_L = activityL;
   let aver_Age = this.calculateAverage(life_S, activity_L);
   let difference;
-  if (aver_Age > Jupiter_age){
-    difference = aver_Age - Jupiter_age;
+  difference = aver_Age - Jupiter_age;
     return `You will live on Jupiter on ${Math.round(difference)} year less`;
-  }
 
 }
