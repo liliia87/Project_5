@@ -27,7 +27,7 @@ _{The business logic of your application should take a person's age in years and
  * _Determines how many years a user has left to live on each planet… (yikes!)_
  * _To do this, the application will have to calculate the user's life expectancy. You can determine average life expectancy as you see fit._
 _{A simple way to do this would be to have the user input the average life expectancy for their demographic. A more involved way to do this would be to collect other information from the user (e.g. lifestyle, country of residence, activity level, etc.) to determine their life expectancy.}_
-7. * _If a user has already surpassed the average life expectancy, return the number of years they have lived past the life expectancy. The number of years lived past life expectancy should be a positive number._
+* _If a user has already surpassed the average life expectancy, return the number of years they have lived past the life expectancy. The number of years lived past life expectancy should be a positive number._
 
 
 ## Setup/Installation Requirements
